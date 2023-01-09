@@ -1,7 +1,7 @@
 import NextAuth from "next-auth"
 import GoogleProvider from 'next-auth/providers/google'
-const dotenv = require('dotenv');
-dotenv.config()
+// const dotenv = require('dotenv');
+// dotenv.config()
 export const authOptions = {
   // Configure one or more authentication providers
   providers:[
