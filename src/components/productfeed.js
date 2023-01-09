@@ -1,8 +1,19 @@
 import React from 'react'
+import Product from './product'
 
-const Productfeed = () => {
+const Productfeed = ({products}) => {
   return (
-    <div>Productfeed</div>
+    <div className='grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-52 mx-auto'>
+      {/* slicing the products to show add between them */}
+      {products.slice(0,4).map((product)=><Product key={product.id} {...product}/>)}
+
+      <img className='md:col-span-full' src='https://links.papareact.com/dyz' alt=''/>
+
+      <div className='md:col-span-2'>
+      {products.slice(4,5).map((product)=><Product key={product.id} {...product}/>)}
+      </div>
+      {products.slice(5,products.length).map((product)=><Product key={product.id} {...product}/>)}
+    </div>
   )
 }
 
