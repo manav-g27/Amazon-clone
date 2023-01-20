@@ -23,7 +23,8 @@
     "react-dom": "^18.2.0",
     "react-redux": "7.2.2",
     "react-responsive-carousel": "^3.2.23",
-    "stripe": "^11.6.0"
+    "stripe": "^11.6.0",
+    "vercel": "^28.13.0"
   },
   "license": "MIT",
   "devDependencies": {
