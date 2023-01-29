@@ -1,6 +1,6 @@
 import { getSession, useSession} from "next-auth/react"
 import React from 'react'
-import Header from '../components/Header'
+import Header from '../components/header';
 import db from '../firebase'
 import moment from 'moment/moment'
 import Order from '../components/Order'
